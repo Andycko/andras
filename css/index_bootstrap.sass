@@ -10,6 +10,10 @@ body
   padding: 0
   font-family: $font-body
 
+.row
+  width: 100%
+  margin: 0 !important
+
 //HEADER
 .jumbotron,
 .jumbotron-fluid
@@ -32,14 +36,44 @@ body
     width: 100%
     margin: 0
 
-.row
+.cash-row
+  background-color: $white-background
   width: 100%
   margin: 0 !important
 
-.cash-row
-  background-color: $white-background
   .cash-col
     padding: 2em 0
 
     .only-cash
       width: 20em
+
+.history-row
+  background: url("../img/pattern-light-brown.png") center center repeat
+
+  .image-col
+    padding: 5em 4em 5em 0
+    text-align: right
+
+    .shop
+      width: 20em
+
+  .text-col
+    padding: 5em 20em 5em 0
+
+    #heading
+      font-weight: 500
+      color: $white-background
+      font-size: 1.8em
+
+    .since
+      height: 5em
+      margin-top: 1.7em
+
+    .text
+      font-weight: 500
+      color: $white-background
+      margin-top: 2em
+      font-size: 1.2em
+
+    .text-last
+      font-size: 0.9em !important
