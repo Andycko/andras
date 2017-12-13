@@ -1,0 +1,165 @@
+@import fonts
+html
+  width: 100%
+  padding: 0
+  margin: 0
+
+
+body
+  width: 100%
+  margin: 0
+  padding: 0
+  font-family: $font-body
+
+.header-cont
+  width: 100%
+  height: 100vh
+  display: flex
+  background-image: url("../img/header.png")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+//   HEADER
+.header-cont div
+  flex: 1
+  padding: 1.5em 1.5em 0 1.5em
+
+.header-cont img,
+  height: 5%
+  width: auto
+
+.header-cont .left img
+  height: 4%
+
+.header-cont .middle img
+  height: 50%
+  display: block
+  margin: auto
+  padding: auto
+
+.header-cont .middle
+  padding: auto
+  margin: auto
+
+.header-cont .left
+  width: 10%
+
+.header-cont .right
+  width: 10%
+  text-align: right
+
+//   splitter
+.splitter-cont
+  width: 100%
+  height: 15vh
+  padding: 0
+  margin: 0
+  background-color: $white-background
+
+.splitter-cont #splitter-wrapper
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+  border: 0
+
+.splitter-cont #splitter-wrapper td
+  vertical-align: middle
+  text-align: center
+
+.splitter-cont img
+  height: 9%
+
+//history
+.history-cont
+  display: block
+  width: 100%
+  height: 80vh
+  background: url("../img/pattern-light-brown.png") center center repeat
+
+.history-cont .history
+  display: flex
+  width: 60vw
+  height: 100%
+  margin: auto
+
+.history-cont .history div
+  flex: 1
+  width: 30vw
+  height: 100%
+  margin: 0 !important
+
+.history-cont .history .left #image-wrapper
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+  border: 0
+
+.history-cont .history .left #image-wrapper td
+  vertical-align: middle
+  text-align: center
+
+.history-cont img
+  height: 45%
+
+.history-cont .history .right #image-wrapper
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+  border: 0
+
+.history-cont .history .right #image-wrapper .obsah
+  height: 70%
+
+.history-cont .history .right #image-wrapper td
+  vertical-align: middle
+
+.history-cont .history .right #image-wrapper td #heading
+  font-weight: 500
+  color: $white-background
+
+.history-cont .history .right #image-wrapper td .since
+  height: 22%
+  margin-top: 0.8em
+
+.history-cont .history .right #image-wrapper td .text
+  font-weight: 500
+  color: $white-background
+  margin-top: 2em
+  font-size: 1.3em
+
+.history-cont .history .right #image-wrapper .obsah :last-child
+  font-size: 1em
+
+//PRICES
+.prices-cont
+  display: block
+  background: url("../img/pattern-white.png") center center repeat
+  padding: 8em 0
+
+  .prices-wrapper
+    display: flex
+
+  .slider-boxes
+    max-width: 50%
+    margin: auto
+    padding-left: 2em
+
+  .slick-slide
+    text-align: center
+    border: 6px $brown-background solid
+    min-height: 25em
+    border-radius: 40px
+    margin: 0 1.6em
+    padding: 3em 2em 0 2em
+
+  .slick-prev::before,
+  .slick-next::before
+    color: $brown-background
+    font-size: 50px
+
+  .slick-dots
+    position: relative
