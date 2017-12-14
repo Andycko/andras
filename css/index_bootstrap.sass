@@ -36,29 +36,26 @@ body
     width: 100%
     margin: 0
 
-.cash-row
+section#cash-banner
   background-color: $white-background
   width: 100%
   margin: 0 !important
 
-  .cash-col
-    padding: 2em 0
+  .only-cash
+    width: 20em
+    margin: 2em 0
 
-    .only-cash
-      width: 20em
-
-.history-row
+section#history
   background: url("../img/pattern-light-brown.png") center center repeat
+  padding: 3em 0
 
-  .image-col
-    padding: 5em 4em 5em 0
-    text-align: right
+  .col-lg
+    margin: 4em 0
 
-    .shop
-      width: 20em
+  .image-col img
+      width: 68%
 
   .text-col
-    padding: 5em 20em 5em 0
 
     #heading
       font-weight: 500
@@ -66,7 +63,7 @@ body
       font-size: 1.8em
 
     .since
-      height: 5em
+      width: 70%
       margin-top: 1.7em
 
     .text
@@ -74,6 +71,29 @@ body
       color: $white-background
       margin-top: 2em
       font-size: 1.2em
+      margin-bottom: 0
 
     .text-last
       font-size: 0.9em !important
+
+section#prices
+    background: url("../img/pattern-white.png") center center repeat
+    overflow: hidden
+
+    .slider-boxes
+      margin: 0
+      
+    .slick-slide
+      border: 6px $brown-background solid
+      min-height: 25em
+      border-radius: 40px
+
+    .slick-prev::before,
+    .slick-next::before
+      color: $brown-background
+      font-size: 50px
+      line-height: 0
+
+    .slick-dots
+      position: relative
+      bottom: 0
