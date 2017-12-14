@@ -1,4 +1,16 @@
-@import fonts
+@import fonts.sass
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+html,
+body
+  font-family: $font-body !important
+
 html
   width: 100%
   padding: 0
@@ -8,7 +20,6 @@ body
   width: 100%
   margin: 0
   padding: 0
-  font-family: $font-body
 
 .row
   width: 100%
@@ -47,7 +58,7 @@ section#cash-banner
 
 section#history
   background: url("../img/pattern-light-brown.png") center center repeat
-  padding: 3em 0
+  padding: 2.5em 0
 
   .col-lg
     margin: 4em 0
@@ -77,23 +88,33 @@ section#history
       font-size: 0.9em !important
 
 section#prices
-    background: url("../img/pattern-white.png") center center repeat
-    overflow: hidden
+  background: url("../img/pattern-white.png") center center repeat
+  text-align: center
+  align-content: center
+  padding: 4em 0 3em 0
 
-    .slider-boxes
-      margin: 0
-      
-    .slick-slide
-      border: 6px $brown-background solid
-      min-height: 25em
-      border-radius: 40px
+  .wrapper
+    max-width: 46%
 
-    .slick-prev::before,
-    .slick-next::before
-      color: $brown-background
-      font-size: 50px
-      line-height: 0
+  h1#prices-heading
+    font-weight: 500
+    font-size: 3.8em
+    color: $brown-background
+    padding: 0
+    margin: 0 0 0.7em 0
 
-    .slick-dots
-      position: relative
-      bottom: 0
+  .owl-dots
+    margin-top: 3em
+
+  .owl-item
+    border: 5px solid $brown-background
+    border-radius: 40px
+    min-height: 24em
+    padding: 10px
+
+  .owl-nav#specialNav
+    .owl-prev,
+    .owl-next
+      border: none
+      background-color: transparent
+      outline: none
