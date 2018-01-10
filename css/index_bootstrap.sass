@@ -1,4 +1,5 @@
-@import fonts.sass
+@import variables.sass
+@import fonts.css
 
 h1
   font-family: $font-heading !important
@@ -27,9 +28,33 @@ body
   width: 100%
   margin: 0 !important
 
+//COLLAPSABLE-HEADER
+section#collapsable-header
+
+  .dropdown-head
+    display: none
+    min-height: 0
+
+    .logo-black
+        padding-top: 2em
+
+    .list
+        padding-top: 4em
+
+        ul
+            padding: 0
+
+        ul li
+            color: black
+            list-style: none
+            text-align: center
+
+            h2
+                padding-top: 0.5em
 //HEADER
 .jumbotron,
-.jumbotron-fluid
+.jumbotron-fluid,
+.main-head
   background-image: url("../img/header.png")
   background-position: center
   background-repeat: no-repeat
@@ -48,6 +73,12 @@ body
   .row
     width: 100%
     margin: 0
+
+.jumbotron.jumbotron-fluid.dropdown-head
+  background: url("../img/pattern-white.png") center center repeat
+  position: absolute
+  width: 100%
+  z-index: 1
 
 section#cash-banner
   background-color: $white-background
@@ -95,8 +126,15 @@ section#prices
   align-content: center
   padding: 4em 0 3em 0
 
+  .icon-row
+    margin-top: 3em !important
+
+    span.ikonka
+      font-size: 3.5em
+      color: $brown-background
+
   .wrapper
-    max-width: 46%
+    max-width: 50%
 
   h1#prices-heading
     font-weight: 900
@@ -108,11 +146,31 @@ section#prices
   .owl-dots
     margin-top: 3em
 
+    .owl-dot span
+      background: none
+      border: 2px $brown-background solid
+      height: 17px
+      width: 17px
+
+    .owl-dot.active span
+      background: $brown-background
+
+
   .owl-item
-    border: 5px solid $brown-background
+    border: 0.4em solid $brown-background
     border-radius: 40px
-    min-height: 24em
-    padding: 10px
+    padding: 2em 2.8em
+    background-color: $white-background
+
+    .slide-heading
+      font-weight: bold
+
+    .slide-heading.last
+      margin-bottom: 0.8em
+
+    .text
+      font-weight: 600
+      font-size: 90%
 
   .owl-nav#specialNav
     .owl-prev,
@@ -129,9 +187,11 @@ section#gallery
     margin-bottom: 0.6em
     font-size: 3.8em
     font-weight: 900
-    color: $white-background
+    color: $brown-background
 
   div.image-back
+    padding-bottom: 1.5em
+
     img
       height: 100%
       width: 100%
@@ -144,4 +204,86 @@ section#reserve
     max-width: 40%
 
     .reserve-image:hover
-      content: url("../img/reserve-hover.svg")
+      content: url("../img/reserve-hover-2.svg")
+
+    a
+
+
+section#shop-info
+
+  div.col-lg
+    padding: 3em 0
+
+  div#hours
+    background: url("../img/pattern-dark-brown.png") center center repeat
+
+    img
+      width: 31%
+      margin-bottom: 2em
+
+    .icon
+      width: 3.2em
+      margin-bottom: 0.5em
+
+    .info-heading
+      color: $brown-background
+      margin-bottom: 0.2em
+
+    .info-subheading
+      color: $white-background
+      font-size: 125%
+      font-weight: 200
+
+    .text
+      color: $white-background
+      font-size: 115%
+      font-weight: 500
+
+    .text.last
+      margin: 0
+
+  div#position
+    background: url("../img/pattern-light-brown.png") center center repeat
+
+    img
+      width: 30%
+      margin-bottom: 2em
+
+    .icon
+      width: 2.7em
+      margin-bottom: 0.5em
+
+    .info-heading
+      margin-bottom: 0.2em
+
+    .text
+      color: white
+      font-size: 135%
+      margin-bottom: 0
+
+    .text.last
+      margin-top: 0.6em
+      font-size: 160%
+      font-weight: 500
+
+section#facebook
+
+  div
+    background: url("../img/pattern-white.png") center center repeat
+
+  i
+    font-size: 4em
+    margin: 0.25em 0
+    color: black
+
+  i:active
+    color: black
+
+  i:visited
+    color: black
+
+section#map
+
+  iframe
+    width: 100%
+    height: 20em
